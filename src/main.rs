@@ -2,6 +2,7 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
 
 fn main() {
     // Day 01
@@ -42,5 +43,15 @@ fn main() {
     println!(
         "Day 04 X-MAS: {}",
         day04::day04::find_x_mas_in_file("./src/data/day04.txt")
+    );
+
+    // Day 05
+    println!(
+        "Day 05 Printing Orders: {}",
+        day05::day05::check_printing_orders_from_file("./src/data/day05.txt")
+    );
+    println!(
+        "Day 05 Reorder Printing Orders: {}",
+        day05::day05::reorder_printing_orders_from_file("./src/data/day05.txt")
     );
 }
