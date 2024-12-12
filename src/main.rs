@@ -1,5 +1,6 @@
 mod day01;
 mod day02;
+mod day03;
 
 fn main() {
     // Day 01
@@ -20,5 +21,15 @@ fn main() {
     println!(
         "Day 02 Tolerate Reports: {}",
         day02::day02::check_tolerate_reports_from_file("./src/data/day02.txt")
+    );
+
+    // Day 03
+    println!(
+        "Day 03 Multiply: {}",
+        day03::day03::multiply_from_file("./src/data/day03.txt")
+    );
+    println!(
+        "Day 03 Multiply with Instructions: {}",
+        day03::day03::multiply_with_instructions_from_file("./src/data/day03.txt")
     );
 }
