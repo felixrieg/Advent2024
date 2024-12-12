@@ -1,0 +1,5 @@
+[package]
+name = "advent2024"
+version = "0.1.0"
+authors = ["Felix"]
+edition = "2021"
