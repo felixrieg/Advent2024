@@ -1,6 +1,7 @@
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 
 fn main() {
     // Day 01
@@ -31,5 +32,15 @@ fn main() {
     println!(
         "Day 03 Multiply with Instructions: {}",
         day03::day03::multiply_with_instructions_from_file("./src/data/day03.txt")
+    );
+
+    // Day 04
+    println!(
+        "Day 04 XMAS: {}",
+        day04::day04::find_xmas_in_file("./src/data/day04.txt")
+    );
+    println!(
+        "Day 04 X-MAS: {}",
+        day04::day04::find_x_mas_in_file("./src/data/day04.txt")
     );
 }
