@@ -2,7 +2,6 @@ pub mod day05 {
     use std::{
         fs::File,
         io::{BufRead, BufReader},
-        result,
     };
 
     fn read_to_lists(filename: &str) -> (Vec<(usize, usize)>, Vec<Vec<usize>>) {

@@ -3,6 +3,7 @@ mod day02;
 mod day03;
 mod day04;
 mod day05;
+mod day06;
 
 fn main() {
     // Day 01
@@ -53,5 +54,15 @@ fn main() {
     println!(
         "Day 05 Reorder Printing Orders: {}",
         day05::day05::reorder_printing_orders_from_file("./src/data/day05.txt")
+    );
+
+    // Day 06
+    println!(
+        "Day 06 Map: {}",
+        day06::day06::count_visited_from_file("./src/data/day06.txt")
+    );
+    println!(
+        "Day 06 Set Obstacles: {}",
+        day06::day06::set_obstacles_from_file("./src/data/day06.txt")
     );
 }
