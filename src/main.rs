@@ -4,6 +4,7 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day07;
 
 fn main() {
     // Day 01
@@ -64,5 +65,16 @@ fn main() {
     println!(
         "Day 06 Set Obstacles: {}",
         day06::day06::set_obstacles_from_file("./src/data/day06.txt")
+    );
+
+    // Day 07
+    println!(
+        "Day 07 True Equations: {}",
+        day07::day07::find_true_equations_from_file("./src/data/day07.txt")
+    );
+    // Day 07
+    println!(
+        "Day 07 True Equations 2: {}",
+        day07::day07::find_true_equations_two_from_file("./src/data/day07.txt")
     );
 }
