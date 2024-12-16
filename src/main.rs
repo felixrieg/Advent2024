@@ -5,8 +5,10 @@ mod day04;
 mod day05;
 mod day06;
 mod day07;
+mod day08;
 
 fn main() {
+    let start_time = std::time::Instant::now();
     // Day 01
     println!(
         "Day 01 Distance: {}",
@@ -77,4 +79,16 @@ fn main() {
         "Day 07 True Equations 2: {}",
         day07::day07::find_true_equations_two_from_file("./src/data/day07.txt")
     );
+
+    // Day 08
+    println!(
+        "Day 08 Antinodes: {}",
+        day08::day08::get_antinodes_from_file("./src/data/day08.txt")
+    );
+    println!(
+        "Day 08 Antinodes Row: {}",
+        day08::day08::get_antinodes_row_from_file("./src/data/day08.txt")
+    );
+
+    println!("Time: {:?}", start_time.elapsed());
 }
