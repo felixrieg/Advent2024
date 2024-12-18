@@ -6,6 +6,7 @@ mod day05;
 mod day06;
 mod day07;
 mod day08;
+mod day09;
 
 fn main() {
     let start_time = std::time::Instant::now();
@@ -88,6 +89,16 @@ fn main() {
     println!(
         "Day 08 Antinodes Row: {}",
         day08::day08::get_antinodes_row_from_file("./src/data/day08.txt")
+    );
+
+    // Day 09
+    println!(
+        "Day 09 Checksum: {}",
+        day09::day09::calculate_checksum_from_file("./src/data/day09.txt")
+    );
+    println!(
+        "Day 09 Checksum Refragged: {}",
+        day09::day09::calculate_checksum_refragged_from_file("./src/data/day09.txt")
     );
 
     println!("Time: {:?}", start_time.elapsed());
