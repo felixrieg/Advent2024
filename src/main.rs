@@ -7,6 +7,7 @@ mod day06;
 mod day07;
 mod day08;
 mod day09;
+mod day10;
 
 fn main() {
     let start_time = std::time::Instant::now();
@@ -99,6 +100,16 @@ fn main() {
     println!(
         "Day 09 Checksum Refragged: {}",
         day09::day09::calculate_checksum_refragged_from_file("./src/data/day09.txt")
+    );
+
+    // Day 10
+    println!(
+        "Day 10 Trails: {}",
+        day10::day10::count_trails_from_file("./src/data/day10.txt")
+    );
+    println!(
+        "Day 10 all Trails: {}",
+        day10::day10::count_all_trails_from_file("./src/data/day10.txt")
     );
 
     println!("Time: {:?}", start_time.elapsed());
