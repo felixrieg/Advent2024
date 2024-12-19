@@ -8,6 +8,7 @@ mod day07;
 mod day08;
 mod day09;
 mod day10;
+mod day11;
 
 fn main() {
     let start_time = std::time::Instant::now();
@@ -110,6 +111,16 @@ fn main() {
     println!(
         "Day 10 all Trails: {}",
         day10::day10::count_all_trails_from_file("./src/data/day10.txt")
+    );
+
+    // Day 11
+    println!(
+        "Day 11 Blink 25 times: {}",
+        day11::day11::blink_n_times("./src/data/day11.txt", 25)
+    );
+    println!(
+        "Day 11 Blink 75 times: {}",
+        day11::day11::blink_n_times("./src/data/day11.txt", 75)
     );
 
     println!("Time: {:?}", start_time.elapsed());
