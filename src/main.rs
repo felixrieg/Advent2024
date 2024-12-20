@@ -10,6 +10,7 @@ mod day09;
 mod day10;
 mod day11;
 mod day12;
+mod day13;
 pub mod utils;
 
 fn main() {
@@ -133,6 +134,16 @@ fn main() {
     println!(
         "Day 12 Discounted Fence Cost: {}",
         day12::day12::calculate_discounted_fence_cost("./src/data/day12.txt")
+    );
+
+    // Day 13
+    println!(
+        "Day 13 Claw Machines: {}",
+        day13::day13::solve_claw_machines("./src/data/day13.txt")
+    );
+    println!(
+        "Day 13 Claw Machines 2: {}",
+        day13::day13::solve_multiplied_claw_machines("./src/data/day13.txt")
     );
 
     println!("Time: {:?}", start_time.elapsed());
