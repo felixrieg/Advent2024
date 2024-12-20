@@ -9,6 +9,8 @@ mod day08;
 mod day09;
 mod day10;
 mod day11;
+mod day12;
+pub mod utils;
 
 fn main() {
     let start_time = std::time::Instant::now();
@@ -121,6 +123,16 @@ fn main() {
     println!(
         "Day 11 Blink 75 times: {}",
         day11::day11::blink_n_times("./src/data/day11.txt", 75)
+    );
+
+    // Day 12
+    println!(
+        "Day 12 Fence Cost: {}",
+        day12::day12::calculate_fence_cost("./src/data/day12.txt")
+    );
+    println!(
+        "Day 12 Discounted Fence Cost: {}",
+        day12::day12::calculate_discounted_fence_cost("./src/data/day12.txt")
     );
 
     println!("Time: {:?}", start_time.elapsed());
