@@ -11,6 +11,7 @@ mod day10;
 mod day11;
 mod day12;
 mod day13;
+mod day14;
 pub mod utils;
 
 fn main() {
@@ -144,6 +145,16 @@ fn main() {
     println!(
         "Day 13 Claw Machines 2: {}",
         day13::day13::solve_multiplied_claw_machines("./src/data/day13.txt")
+    );
+
+    // Day 14
+    println!(
+        "Day 14 Robot safety factor after 100 steps: {}",
+        day14::day14::calc_robot_position("./src/data/day14.txt")
+    );
+    println!(
+        "Day 14 Christmas tree after {} steps",
+        day14::day14::print_christmas_tree("./src/data/day14.txt", false)
     );
 
     println!("Time: {:?}", start_time.elapsed());

@@ -40,7 +40,6 @@ pub mod day13 {
 
         if a_1 == a_2 && a_1 >= 0.0 && b >= 0.0 {
             if a_1.fract() == 0.0 && b.fract() == 0.0 {
-                println!("a: {}, b: {}", a_1, b);
                 return (a_1 * 3.0 + b * 1.0) as usize;
             }
         }
